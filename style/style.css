@@ -105,11 +105,7 @@ body {
   justify-content: center;
   background: url('/assets/hero-bg.png') center/cover no-repeat; 
 
-  
- 
 }
-
-
 
 .hero-container {
   position: relative;
@@ -178,12 +174,6 @@ body {
     justify-content: space-between;
   }
 
-  .hero p {
-
-  white-space: wrap;
-
-
-}
 }
 
 
