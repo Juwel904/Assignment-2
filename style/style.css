@@ -103,7 +103,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../assets/hero-bg.png");
+  background: url("../assets/hero-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
