@@ -1,0 +1,80 @@
+
+.linear-gradient {
+  background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+  color: transparent;
+  font-weight: bold;
+}
+
+.btn-primarry {
+  background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+  color: #FFFFFF;    
+  align-items: center;
+  font-weight: bold;
+  border: none;            
+  padding: 10px 24px;      
+  border-radius: 10000px;      
+  cursor: pointer;  
+  gap: 5px;  
+  display: flex;      
+}
+.btn-primarry img {
+  width: 20px;  
+  height: 20px; 
+  
+}
+
+.whcolor{
+    color: #FFFFFF;
+}
+body {
+    background-color: #1A0B2E;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 20px;
+    
+}
+
+.navbar ul{
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+   gap: 32px;
+   list-style: none;
+
+}
+
+.navbar a {
+    text-decoration: none;          
+    font-weight: bold;
+}
+
+.hamburger-img {
+  display: none;
+  width: 32px;  
+  height: 32px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-links,
+  .btn-primarry {
+    display: none !important;
+  }
+  .hamburger-img {
+    display: block;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+}
+
