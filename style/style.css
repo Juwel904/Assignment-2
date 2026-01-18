@@ -1,4 +1,13 @@
 
+.inter-font {
+  font-family: "Inter";
+  font-optical-sizing: auto;
+}
+
+* {
+    
+    box-sizing: border-box;
+}
 .linear-gradient {
   background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
   -webkit-background-clip: text;
@@ -61,8 +70,7 @@
 }
 body {
     background-color: #1A0B2E;
-    margin: 0;
-    padding: 0;
+    
 }
 
 .navbar{
@@ -70,7 +78,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2px 20px;
+    padding: 2px 50px;
+
     
 }
 
@@ -98,14 +107,15 @@ body {
 
 .hero {
   position: relative;
-  width: 100%;
+ 
   height: 760px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: url("../assets/hero-bg.png");
   background-position: center;
-  background-size: cover;
+  
   background-repeat: no-repeat;
 }
 
@@ -164,7 +174,47 @@ body {
   display: flex;
   gap: 16px;
 }
+.podcast-pr{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    opacity: 0.8;
+}
 
+.card-contain{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    justify-content: center;
+}
+
+.about-podcast {
+width: 100%;
+margin: 0 auto;
+padding: 20px;
+text-align: center;
+}
+
+.podcast-pr {
+width: 100%;
+margin: 0 auto;
+text-align: center;
+line-height: 1.6;
+}
+
+
+
+.card-1, .card-2, .card-3, .card-4 {
+
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+
+}
+
+.card-contain img {
+height: 58px;
+width: 240px ;
+}
 @media screen and (max-width: 576px) {
   .nav-links,
   .btn-primarry {
