@@ -70,24 +70,24 @@
 }
 body {
     background-color: #1A0B2E;
-    
+  
 }
 
-.navbar{
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2px 50px;
-
-    
+.navbar {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar ul{
     text-decoration: none;
     font-weight: bold;
     display: flex;
-   gap: 32px;
+   gap: 50px;
    list-style: none;
 
 }
@@ -103,6 +103,7 @@ body {
   height: 32px;
   cursor: pointer;
 }
+
 
 
 .hero {
@@ -180,11 +181,12 @@ body {
     opacity: 0.8;
 }
 
-.card-contain{
+.card-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
-    justify-content: center;
+    max-width: 1440px;
+    
 }
 
 .about-podcast {
@@ -201,20 +203,59 @@ text-align: center;
 line-height: 1.6;
 }
 
-
-
 .card-1, .card-2, .card-3, .card-4 {
-
-padding: 20px;
 border-radius: 10px;
 text-align: center;
-
+}
+.section-divider {
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
 }
 
-.card-contain img {
-height: 58px;
-width: 240px ;
+
+.card-container img {
+  max-width: 240px;
+  width: 100%;
+  height: auto;
 }
+
+.why-choose{
+  display: grid;
+  width: 80%;
+   gap: 3px;
+  grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 200px);
+   border: 2px solid black;
+  
+}
+.why-choose img{
+  width: 50px;
+  height: 50px;
+}
+
+.cards-1{
+  grid-column: 6/4;
+  grid-row: 6/4;
+  border:2px solid #F7E93F;
+}
+
+.cards-4{
+  grid-column: 4/6;
+  grid-row: 4/6;
+  border:2px solid #F7E93F;
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 576px) {
   .nav-links,
   .btn-primarry {
@@ -226,6 +267,11 @@ width: 240px ;
   .navbar {
     justify-content: space-between;
   }
+
+  .card-container{
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
 }
 
