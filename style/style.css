@@ -460,6 +460,26 @@ text-align: center;
 }
 
 
+@keyframes colorChange {
+  0%, 24.99% {
+    color: #FFFFFF;
+  }
+  25%, 49.99% {
+    color: #F7E93F;
+  }
+  50%, 74.99% {
+    color: #FB09B4;
+  }
+  75%, 100% {
+    color: #9100F8;
+  }
+}
+
+.why-choose .section-title {
+  animation: colorChange 2s infinite;
+}
+
+
 
 
 
